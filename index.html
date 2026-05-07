@@ -7,7 +7,7 @@
 <style>
 body{
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI', sans-serif;
     background:#f5f7fb;
     color:#1f2937;
 }
@@ -18,21 +18,28 @@ header{
     padding:70px 20px;
     background: linear-gradient(135deg,#2563eb,#1e40af);
     color:white;
-    animation: fadeIn 1s ease-in-out;
 }
 
+/* PHOTO */
+.profile{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    margin-bottom:10px;
+    transition:0.3s;
+}
+
+.profile:hover{
+    transform:scale(1.05);
+}
+
+/* ANIMATION */
 @keyframes fadeIn{
     from{opacity:0; transform:translateY(20px);}
     to{opacity:1; transform:translateY(0);}
-}
-
-.profile{
-    width:120px;
-    height:120px;
-    object-fit:cover;
-    border-radius:50%;
-    border:3px solid white;
-    margin-bottom:10px;
 }
 
 /* BUTTON */
@@ -59,6 +66,7 @@ section{
     padding:25px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    animation:fadeIn 0.8s ease-in-out;
 }
 
 /* TITRES */
@@ -68,7 +76,7 @@ h2{
     padding-left:10px;
 }
 
-/* CARD */
+/* CARDS */
 .card{
     background:#f8fafc;
     padding:15px;
@@ -77,6 +85,7 @@ h2{
     border:1px solid #e5e7eb;
     transition:0.3s;
 }
+
 .card:hover{
     transform:translateY(-5px);
 }
@@ -140,7 +149,7 @@ Je cherche un stage PFA pour contribuer à des projets innovants à fort impact.
 <div class="card">
 <h3>OCP Group - Stagiaire Développement Web & IA (2025)</h3>
 <ul>
-<li>Développement d’une plateforme de supervision en temps réel</li>
+<li>Développement d’une plateforme de supervision temps réel</li>
 <li>Collecte et structuration de données capteurs industriels</li>
 <li>Détection d’anomalies avec Machine Learning</li>
 <li>Dashboard interactif KPI</li>
@@ -154,16 +163,15 @@ Je cherche un stage PFA pour contribuer à des projets innovants à fort impact.
 <section>
 <h2>🚀 Projets</h2>
 
-<!-- IA PROJECT -->
 <div class="card">
 <h3>Plateforme de Supervision IA en Temps Réel</h3>
-<p>Système intelligent de monitoring industriel avec détection d’anomalies.</p>
+<p>Système intelligent de monitoring industriel avec IA.</p>
 
 <ul>
-<li>Surveillance temps réel de systèmes techniques</li>
-<li>Machine Learning pour détection d’anomalies</li>
+<li>Surveillance temps réel de systèmes industriels</li>
+<li>Détection d’anomalies avec Machine Learning</li>
 <li>Dashboard interactif de visualisation</li>
-<li>Chatbot intelligent d’assistance utilisateur</li>
+<li>Chatbot intelligent (NLP)</li>
 </ul>
 
 <p>
@@ -181,109 +189,71 @@ Je cherche un stage PFA pour contribuer à des projets innovants à fort impact.
 </p>
 </div>
 
-<!-- JAVA EE -->
 <div class="card">
 <h3>Système de Réservation de Voyages (Java EE)</h3>
-<p>Application web de réservation de billets train / avion avec base de données MySQL.</p>
-
 <ul>
 <li>Gestion utilisateurs et billets</li>
 <li>CRUD complet</li>
-<li>Architecture Java EE</li>
+<li>Base de données MySQL</li>
 <li>Modélisation UML</li>
 </ul>
-
-<p>
 <span class="tag">Java EE</span>
 <span class="tag">MySQL</span>
 <span class="tag">UML</span>
-</p>
 </div>
 
-<!-- JAVA FX -->
 <div class="card">
-<h3>Gestion de Parking d’Aéroport (JavaFX)</h3>
-<p>Application desktop pour gestion des véhicules et tarification automatique.</p>
-
+<h3>Gestion de Parking (JavaFX)</h3>
 <ul>
+<li>Application desktop</li>
+<li>Gestion véhicules et tarifs</li>
 <li>Interface JavaFX</li>
-<li>Gestion des entrées/sorties</li>
-<li>Calcul automatique des tarifs</li>
 </ul>
-
-<p>
 <span class="tag">Java</span>
 <span class="tag">JavaFX</span>
-</p>
 </div>
 
-<!-- WEB CRUD -->
 <div class="card">
-<h3>To-Do List Web App (PHP / Python)</h3>
-<p>Application de gestion de tâches avec authentification utilisateur.</p>
-
+<h3>To-Do List Web App</h3>
 <ul>
 <li>CRUD complet</li>
-<li>Gestion utilisateurs</li>
+<li>Authentification utilisateur</li>
 <li>Base de données MySQL</li>
 </ul>
-
-<p>
 <span class="tag">PHP</span>
 <span class="tag">Python</span>
 <span class="tag">MySQL</span>
-</p>
 </div>
 
-<!-- ML -->
 <div class="card">
 <h3>Machine Learning – Prédiction du Sans-Abrisme</h3>
-<p>Modèle prédictif basé sur analyse de données sociales en Californie.</p>
-
 <ul>
-<li>Analyse et nettoyage des données</li>
+<li>Analyse de données</li>
 <li>Feature engineering</li>
 <li>Modèle prédictif ML</li>
-<li>Visualisation des résultats</li>
+<li>Visualisation résultats</li>
 </ul>
-
-<p>
 <span class="tag">Python</span>
 <span class="tag">ML</span>
-<span class="tag">Pandas</span>
-</p>
 </div>
 
-<!-- SECURITY -->
 <div class="card">
-<h3>Système Sécurisé de Dématérialisation (UML)</h3>
-<p>Conception d’un système sécurisé de gestion administrative.</p>
-
+<h3>Système Sécurisé (UML)</h3>
 <ul>
+<li>Conception système sécurisé</li>
 <li>Analyse des risques SI</li>
 <li>Modélisation UML</li>
-<li>Concept sécurité & authentification</li>
 </ul>
-
-<p>
 <span class="tag">UML</span>
-<span class="tag">Sécurité SI</span>
-</p>
 </div>
 
-<!-- C -->
 <div class="card">
 <h3>Projet C – Réservation Restaurant</h3>
-<p>Programme en langage C pour gestion des réservations.</p>
-
 <ul>
-<li>Gestion des réservations</li>
-<li>Algorithmes de disponibilité</li>
+<li>Gestion réservations</li>
+<li>Algorithmique</li>
 </ul>
-
-<p>
 <span class="tag">C</span>
-</p>
 </div>
 
 </section>
@@ -342,7 +312,7 @@ Français (Courant) • Arabe (Natif) • Anglais (Technique)
 
 <div class="card">
 Email : ilhamelouarzadi123@gmail.com <br>
-LinkedIn : <a href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">profil LinkedIn</a>
+LinkedIn : <a href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">profil</a>
 </div>
 
 </section>
