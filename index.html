@@ -5,43 +5,34 @@
 <title>Ilham Elouarzadi | Portfolio</title>
 
 <style>
-/* 🌑 GLOBAL */
 body{
     margin:0;
     font-family: 'Segoe UI', sans-serif;
-    background:#0b1220;
-    color:#e5e7eb;
-}
-
-/* ✨ ANIMATION */
-@keyframes fadeIn {
-    from {opacity:0; transform: translateY(20px);}
-    to {opacity:1; transform: translateY(0);}
+    background:#f5f7fb;
+    color:#1f2937;
 }
 
 /* HEADER */
 header{
     text-align:center;
-    padding:80px 20px;
-    background: linear-gradient(135deg,#1e3a8a,#0b1220);
+    padding:70px 20px;
+    background: linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
     animation: fadeIn 1s ease-in-out;
 }
 
-header h1{
-    font-size:42px;
-    margin:10px 0;
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
 }
 
-header p{
-    color:#cbd5e1;
-}
-
-/* PHOTO */
 .profile{
-    width:130px;
+    width:120px;
+    height:120px;
+    object-fit:cover;
     border-radius:50%;
-    border:3px solid #3b82f6;
-    margin-bottom:15px;
+    border:3px solid white;
+    margin-bottom:10px;
 }
 
 /* BUTTON */
@@ -49,51 +40,51 @@ header p{
     display:inline-block;
     margin-top:10px;
     padding:10px 18px;
-    background:#3b82f6;
-    color:white;
+    background:white;
+    color:#1e40af;
     border-radius:8px;
     text-decoration:none;
+    font-weight:bold;
     transition:0.3s;
 }
 .btn:hover{
     transform:scale(1.05);
-    background:#2563eb;
 }
 
-/* SECTION */
+/* SECTIONS */
 section{
-    max-width:900px;
-    margin:40px auto;
+    max-width:950px;
+    margin:30px auto;
+    background:white;
     padding:25px;
-    background:#111827;
     border-radius:12px;
-    animation: fadeIn 1s ease-in-out;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 /* TITRES */
 h2{
-    color:#60a5fa;
-    border-left:4px solid #3b82f6;
+    color:#1e40af;
+    border-left:4px solid #2563eb;
     padding-left:10px;
 }
 
 /* CARD */
 .card{
-    background:#1f2937;
+    background:#f8fafc;
     padding:15px;
     margin-top:15px;
     border-radius:10px;
+    border:1px solid #e5e7eb;
     transition:0.3s;
 }
 .card:hover{
     transform:translateY(-5px);
-    background:#273449;
 }
 
 /* TAGS */
 .tag{
     display:inline-block;
-    background:#3b82f6;
+    background:#2563eb;
     color:white;
     padding:5px 10px;
     margin:3px;
@@ -103,7 +94,7 @@ h2{
 
 /* LINKS */
 a{
-    color:#60a5fa;
+    color:#2563eb;
     font-weight:bold;
 }
 
@@ -111,7 +102,7 @@ a{
 footer{
     text-align:center;
     padding:20px;
-    color:#94a3b8;
+    color:#6b7280;
     font-size:13px;
 }
 </style>
@@ -119,47 +110,61 @@ footer{
 
 <body>
 
+<!-- HEADER -->
 <header>
     <img src="photo.jpeg" class="profile">
 
     <h1>Ilham Elouarzadi</h1>
-    <p>AI & Data Engineer | Web Development | Smart Systems Builder</p>
+    <p>AI & Data Engineer | Web Development | Smart Systems</p>
     <p>Rabat, Maroc | 📧 ilhamelouarzadi123@gmail.com | 📞 +212 707883519</p>
 
-    <a class="btn" href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">LinkedIn</a>
+    <a class="btn" href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">
+        Voir LinkedIn
+    </a>
 </header>
 
+<!-- ABOUT -->
 <section>
-<h2>👩‍💻 À propos</h2>
+<h2>👩‍💻 À propos de moi</h2>
 <p>
 Élève-ingénieure en informatique (Management & Gouvernance des SI), passionnée par le développement web, l’intelligence artificielle et la data.
-J’ai développé une plateforme de supervision en temps réel avec détection d’anomalies (Machine Learning), dashboard interactif et chatbot intelligent.
-Je recherche un stage PFA pour contribuer à des projets innovants à impact.
+J’ai développé des systèmes de supervision en temps réel avec Machine Learning, dashboards interactifs et chatbot intelligent.
+Je cherche un stage PFA pour contribuer à des projets innovants à fort impact.
 </p>
 </section>
 
+<!-- EXPERIENCE -->
 <section>
 <h2>💼 Expérience</h2>
 
 <div class="card">
-<h3>OCP Group - Stagiaire IA & Web (2025)</h3>
+<h3>OCP Group - Stagiaire Développement Web & IA (2025)</h3>
 <ul>
-<li>Application de supervision en temps réel (capteurs industriels)</li>
-<li>Collecte et structuration de données</li>
+<li>Développement d’une plateforme de supervision en temps réel</li>
+<li>Collecte et structuration de données capteurs industriels</li>
 <li>Détection d’anomalies avec Machine Learning</li>
-<li>Dashboard KPI interactif</li>
+<li>Dashboard interactif KPI</li>
 <li>Chatbot intelligent (NLP)</li>
 </ul>
 </div>
 
 </section>
 
+<!-- PROJECTS -->
 <section>
-<h2>🚀 Projet principal</h2>
+<h2>🚀 Projets</h2>
 
+<!-- IA PROJECT -->
 <div class="card">
-<h3>Plateforme de Supervision IA</h3>
-<p>Système intelligent de monitoring en temps réel avec IA.</p>
+<h3>Plateforme de Supervision IA en Temps Réel</h3>
+<p>Système intelligent de monitoring industriel avec détection d’anomalies.</p>
+
+<ul>
+<li>Surveillance temps réel de systèmes techniques</li>
+<li>Machine Learning pour détection d’anomalies</li>
+<li>Dashboard interactif de visualisation</li>
+<li>Chatbot intelligent d’assistance utilisateur</li>
+</ul>
 
 <p>
 <span class="tag">Python</span>
@@ -171,56 +176,173 @@ Je recherche un stage PFA pour contribuer à des projets innovants à impact.
 
 <p>
 <a href="https://github.com/ilham-elouarzadi/real-time-monitoring-ai" target="_blank">
-🔗 Voir le projet sur GitHub
+🔗 Voir sur GitHub
 </a>
 </p>
 </div>
 
-</section>
-
-<section>
-<h2>🎓 Formation</h2>
-
+<!-- JAVA EE -->
 <div class="card">
-<p><b>ENSA Khouribga</b> (2024 - 2027)</p>
-<p>Informatique - Management & Gouvernance SI</p>
-</div>
+<h3>Système de Réservation de Voyages (Java EE)</h3>
+<p>Application web de réservation de billets train / avion avec base de données MySQL.</p>
 
-<div class="card">
-<p><b>Classes préparatoires intégrées</b> (2022 - 2024)</p>
-<p>ENSA Khouribga</p>
-</div>
+<ul>
+<li>Gestion utilisateurs et billets</li>
+<li>CRUD complet</li>
+<li>Architecture Java EE</li>
+<li>Modélisation UML</li>
+</ul>
 
-</section>
-
-<section>
-<h2>🧠 Compétences</h2>
-
-<div class="card">
 <p>
-Python • Java • JavaScript • SQL • React • Node.js <br>
-Machine Learning • Deep Learning • NLP • Data Analysis <br>
-Git • Linux • REST API • UML • Agile
+<span class="tag">Java EE</span>
+<span class="tag">MySQL</span>
+<span class="tag">UML</span>
+</p>
+</div>
+
+<!-- JAVA FX -->
+<div class="card">
+<h3>Gestion de Parking d’Aéroport (JavaFX)</h3>
+<p>Application desktop pour gestion des véhicules et tarification automatique.</p>
+
+<ul>
+<li>Interface JavaFX</li>
+<li>Gestion des entrées/sorties</li>
+<li>Calcul automatique des tarifs</li>
+</ul>
+
+<p>
+<span class="tag">Java</span>
+<span class="tag">JavaFX</span>
+</p>
+</div>
+
+<!-- WEB CRUD -->
+<div class="card">
+<h3>To-Do List Web App (PHP / Python)</h3>
+<p>Application de gestion de tâches avec authentification utilisateur.</p>
+
+<ul>
+<li>CRUD complet</li>
+<li>Gestion utilisateurs</li>
+<li>Base de données MySQL</li>
+</ul>
+
+<p>
+<span class="tag">PHP</span>
+<span class="tag">Python</span>
+<span class="tag">MySQL</span>
+</p>
+</div>
+
+<!-- ML -->
+<div class="card">
+<h3>Machine Learning – Prédiction du Sans-Abrisme</h3>
+<p>Modèle prédictif basé sur analyse de données sociales en Californie.</p>
+
+<ul>
+<li>Analyse et nettoyage des données</li>
+<li>Feature engineering</li>
+<li>Modèle prédictif ML</li>
+<li>Visualisation des résultats</li>
+</ul>
+
+<p>
+<span class="tag">Python</span>
+<span class="tag">ML</span>
+<span class="tag">Pandas</span>
+</p>
+</div>
+
+<!-- SECURITY -->
+<div class="card">
+<h3>Système Sécurisé de Dématérialisation (UML)</h3>
+<p>Conception d’un système sécurisé de gestion administrative.</p>
+
+<ul>
+<li>Analyse des risques SI</li>
+<li>Modélisation UML</li>
+<li>Concept sécurité & authentification</li>
+</ul>
+
+<p>
+<span class="tag">UML</span>
+<span class="tag">Sécurité SI</span>
+</p>
+</div>
+
+<!-- C -->
+<div class="card">
+<h3>Projet C – Réservation Restaurant</h3>
+<p>Programme en langage C pour gestion des réservations.</p>
+
+<ul>
+<li>Gestion des réservations</li>
+<li>Algorithmes de disponibilité</li>
+</ul>
+
+<p>
+<span class="tag">C</span>
 </p>
 </div>
 
 </section>
 
+<!-- EDUCATION -->
 <section>
-<h2>📜 Certifications</h2>
+<h2>🎓 Formation</h2>
 
 <div class="card">
-<p>✔ Python for Data Science</p>
-<p>✔ Generative AI Strategy & Risk</p>
+<b>ENSA Khouribga (2024 - 2027)</b><br>
+Informatique - Management & Gouvernance SI
+</div>
+
+<div class="card">
+<b>Classes préparatoires (2022 - 2024)</b>
 </div>
 
 </section>
 
+<!-- SKILLS -->
+<section>
+<h2>🧠 Compétences</h2>
+
+<div class="card">
+Python • Java • JavaScript • PHP • SQL • React • Node.js <br>
+Machine Learning • Deep Learning • NLP • Data Analysis <br>
+Git • Linux • UML • Agile • REST API
+</div>
+
+</section>
+
+<!-- CERTIFICATIONS -->
+<section>
+<h2>📜 Certifications</h2>
+
+<div class="card">
+✔ Python for Data Science <br>
+✔ Generative AI Strategy & Risk
+</div>
+
+</section>
+
+<!-- LANGUAGES -->
 <section>
 <h2>🌍 Langues</h2>
 
 <div class="card">
-<p>Français (Courant) • Arabe (Natif) • Anglais (Technique)</p>
+Français (Courant) • Arabe (Natif) • Anglais (Technique)
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>📞 Contact</h2>
+
+<div class="card">
+Email : ilhamelouarzadi123@gmail.com <br>
+LinkedIn : <a href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">profil LinkedIn</a>
 </div>
 
 </section>
