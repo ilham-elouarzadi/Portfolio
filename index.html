@@ -25,7 +25,7 @@ nav{
     background:white;
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:20px;
     padding:12px;
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
     z-index:999;
@@ -45,10 +45,9 @@ header{
     color:white;
 }
 
-/* PHOTO PREMIUM */
 .profile{
-    width:180px;
-    height:180px;
+    width:190px;
+    height:190px;
     object-fit:cover;
     object-position:50% 20%;
     border-radius:50%;
@@ -69,29 +68,8 @@ section{
     padding:25px;
     border-radius:12px;
     box-shadow:0 5px 15px rgba(0,0,0,0.05);
-
-    opacity:0;
-    transform:translateY(30px);
-    animation:fadeUp 0.8s ease forwards;
 }
 
-/* animations delay */
-section:nth-of-type(1){animation-delay:0.1s;}
-section:nth-of-type(2){animation-delay:0.2s;}
-section:nth-of-type(3){animation-delay:0.3s;}
-section:nth-of-type(4){animation-delay:0.4s;}
-section:nth-of-type(5){animation-delay:0.5s;}
-section:nth-of-type(6){animation-delay:0.6s;}
-section:nth-of-type(7){animation-delay:0.7s;}
-
-@keyframes fadeUp{
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* TITLES */
 h2{
     color:#1e40af;
     border-left:4px solid #2563eb;
@@ -101,7 +79,7 @@ h2{
 /* CARD */
 .card{
     background:#f8fafc;
-    padding:15px;
+    padding:18px;
     margin-top:15px;
     border-radius:10px;
     border:1px solid #e5e7eb;
@@ -110,7 +88,7 @@ h2{
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
 }
 
 /* TAGS */
@@ -122,38 +100,6 @@ h2{
     margin:3px;
     border-radius:5px;
     font-size:12px;
-    transition:0.3s;
-}
-
-.tag:hover{
-    transform:scale(1.1);
-}
-
-/* LINKS */
-a{
-    color:#2563eb;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-/* BUTTON */
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 18px;
-    background:white;
-    color:#1e40af;
-    border-radius:8px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    transform:scale(1.05);
 }
 </style>
 </head>
@@ -162,24 +108,20 @@ a:hover{
 
 <!-- NAVBAR -->
 <nav>
-    <a href="#about">À propos</a>
-    <a href="#experience">Expérience</a>
-    <a href="#projects">Projets</a>
-    <a href="#skills">Compétences</a>
-    <a href="#contact">Contact</a>
+<a href="#about">À propos</a>
+<a href="#exp">Expérience</a>
+<a href="#projects">Projets</a>
+<a href="#skills">Compétences</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <!-- HEADER -->
 <header>
-    <img src="photo.jpeg" class="profile">
+<img src="photo.jpeg" class="profile">
 
-    <h1>Ilham Elouarzadi</h1>
-    <p>AI & Data Engineer | Web Development | Intelligent Systems</p>
-    <p>Rabat, Maroc | 📧 ilhamelouarzadi123@gmail.com | 📞 +212 707883519</p>
-
-    <a class="btn" href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">
-        Voir LinkedIn
-    </a>
+<h1>Ilham Elouarzadi</h1>
+<p>AI & Data Engineer | Web Development | Intelligent Systems</p>
+<p>Rabat, Maroc | ilhamelouarzadi123@gmail.com | +212 707883519</p>
 </header>
 
 <!-- ABOUT -->
@@ -187,87 +129,189 @@ a:hover{
 <h2>👩‍💻 À propos de moi</h2>
 
 <p>
-Élève-ingénieure en informatique spécialisée en Management & Gouvernance des SI.
-Passionnée par le développement web, l’intelligence artificielle et la data.
+Élève-ingénieure en informatique spécialisée en Management & Gouvernance des SI, passionnée par l’intelligence artificielle, le web et la data.
 </p>
 
 <p>
-Je conçois des systèmes intelligents combinant IA et développement web pour résoudre des problèmes réels.
+Je développe des systèmes capables de transformer des données en solutions intelligentes pour résoudre des problèmes réels.
 </p>
 
-<p>
-🎯 Objectif : stage PFA en IA / Data / Web pour contribuer à des projets à impact.
-</p>
+<p><b>🎯 Objectif :</b> Stage PFA en IA / Data / Web.</p>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="exp">
 <h2>💼 Expérience</h2>
 
 <div class="card">
-<h3>OCP Group – Stagiaire IA & Développement Web (2025)</h3>
+<h3>OCP Group – Stagiaire IA & Web (2025)</h3>
+
+<p><b>🎯 Contexte :</b> difficulté de supervision des données industrielles en temps réel.</p>
+
+<p><b>💡 Solution :</b> développement d’une plateforme intelligente de monitoring.</p>
 
 <ul>
-<li>Développement d’une plateforme de supervision temps réel</li>
-<li>Collecte et analyse de données capteurs industriels</li>
-<li>Détection d’anomalies avec Machine Learning</li>
-<li>Dashboard interactif KPI</li>
-<li>Chatbot intelligent (NLP)</li>
+<li>Collecte de données capteurs</li>
+<li>Machine Learning pour détection d’anomalies</li>
+<li>Dashboard KPI</li>
+<li>Chatbot NLP</li>
 </ul>
 
-<p><b>Impact :</b> meilleure visualisation et automatisation de la détection des anomalies.</p>
+<p><b>📊 Impact :</b> meilleure supervision et automatisation des alertes.</p>
 </div>
-
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
 <h2>🚀 Projets</h2>
 
+<!-- PROJECT 1 -->
 <div class="card">
-<h3>Plateforme de Supervision IA en Temps Réel</h3>
-<p>Système intelligent de monitoring industriel avec IA.</p>
+<h3>Plateforme de Supervision IA</h3>
 
+<p><b>🎯 Problème :</b> les données industrielles sont complexes et difficiles à analyser manuellement en temps réel.</p>
+
+<p><b>💡 Solution :</b> développement d’un système intelligent de supervision et d’analyse automatique.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
 <ul>
-<li>Surveillance temps réel</li>
-<li>Machine Learning pour anomalies</li>
-<li>Dashboard interactif</li>
-<li>Chatbot NLP</li>
+<li>Collecte des données capteurs industriels</li>
+<li>Nettoyage et structuration des données</li>
+<li>Détection d’anomalies avec Machine Learning</li>
+<li>Dashboard interactif de visualisation</li>
+<li>Chatbot intelligent (NLP)</li>
 </ul>
 
+<p><b>📊 Impact :</b> amélioration de la surveillance et détection automatique des anomalies.</p>
+
 <span class="tag">Python</span>
-<span class="tag">ML</span>
+<span class="tag">Machine Learning</span>
 <span class="tag">Flask</span>
 <span class="tag">NLP</span>
 </div>
 
+<!-- PROJECT 2 -->
 <div class="card">
-<h3>Java EE – Réservation de Voyages</h3>
-<ul><li>CRUD complet</li><li>MySQL</li><li>UML</li></ul>
-<span class="tag">Java EE</span><span class="tag">MySQL</span>
+<h3>Système de Réservation de Voyages (Java EE)</h3>
+
+<p><b>🎯 Problème :</b> besoin d’un système structuré pour gérer les réservations de transport.</p>
+
+<p><b>💡 Solution :</b> application web de gestion de billets (train / avion).</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>Gestion des utilisateurs</li>
+<li>Réservation des billets</li>
+<li>CRUD complet</li>
+<li>Base de données MySQL</li>
+<li>Modélisation UML</li>
+</ul>
+
+<p><b>📊 Impact :</b> digitalisation et automatisation du système de réservation.</p>
+
+<span class="tag">Java EE</span>
+<span class="tag">MySQL</span>
 </div>
 
+<!-- PROJECT 3 -->
 <div class="card">
-<h3>JavaFX – Gestion Parking</h3>
-<ul><li>Application desktop</li><li>Gestion véhicules</li></ul>
+<h3>Gestion de Parking (JavaFX)</h3>
+
+<p><b>🎯 Problème :</b> gestion manuelle inefficace des parkings.</p>
+
+<p><b>💡 Solution :</b> application desktop d’automatisation.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>Gestion véhicules</li>
+<li>Abonnements</li>
+<li>Calcul automatique des tarifs</li>
+<li>Interface JavaFX</li>
+</ul>
+
+<p><b>📊 Impact :</b> amélioration de la gestion opérationnelle.</p>
+
 <span class="tag">JavaFX</span>
 </div>
 
+<!-- PROJECT 4 -->
 <div class="card">
 <h3>To-Do List Web App</h3>
-<ul><li>CRUD</li><li>Auth utilisateur</li></ul>
-<span class="tag">PHP</span><span class="tag">MySQL</span>
+
+<p><b>🎯 Problème :</b> besoin d’organisation des tâches quotidiennes.</p>
+
+<p><b>💡 Solution :</b> application web de gestion de tâches.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>CRUD des tâches</li>
+<li>Authentification utilisateur</li>
+<li>Base de données MySQL</li>
+</ul>
+
+<p><b>📊 Impact :</b> amélioration de la productivité personnelle.</p>
+
+<span class="tag">PHP</span>
 </div>
 
+<!-- PROJECT 5 -->
 <div class="card">
-<h3>Machine Learning – Sans-abrisme</h3>
-<ul><li>Analyse données</li><li>Modèle prédictif</li></ul>
-<span class="tag">Python</span><span class="tag">ML</span>
+<h3>Machine Learning – Sans-Abrisme</h3>
+
+<p><b>🎯 Problème :</b> analyse des facteurs liés au sans-abrisme.</p>
+
+<p><b>💡 Solution :</b> modèle prédictif basé sur ML.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>Nettoyage données</li>
+<li>Feature engineering</li>
+<li>Modèle ML</li>
+<li>Visualisation</li>
+</ul>
+
+<p><b>📊 Impact :</b> compréhension des tendances sociales.</p>
+
+<span class="tag">Python</span>
 </div>
 
+<!-- PROJECT 6 -->
+<div class="card">
+<h3>Système de Sécurité SI (UML)</h3>
+
+<p><b>🎯 Problème :</b> sécurisation des systèmes administratifs.</p>
+
+<p><b>💡 Solution :</b> conception d’un système sécurisé.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>Analyse système</li>
+<li>Modélisation UML</li>
+<li>Étude de sécurité</li>
+</ul>
+
+<p><b>📊 Impact :</b> amélioration de la sécurité SI.</p>
+
+<span class="tag">UML</span>
+</div>
+
+<!-- PROJECT 7 -->
 <div class="card">
 <h3>Projet C – Réservation Restaurant</h3>
-<ul><li>Gestion réservations</li></ul>
+
+<p><b>🎯 Problème :</b> gestion manuelle des réservations.</p>
+
+<p><b>💡 Solution :</b> programme en langage C automatisant les réservations.</p>
+
+<p><b>⚙️ Fonctionnement :</b></p>
+<ul>
+<li>Gestion des tables</li>
+<li>Réservations clients</li>
+<li>Logique algorithmique</li>
+</ul>
+
+<p><b>📊 Impact :</b> simplification du processus de réservation.</p>
+
 <span class="tag">C</span>
 </div>
 
@@ -279,10 +323,9 @@ Je conçois des systèmes intelligents combinant IA et développement web pour r
 
 <div class="card">
 Python • Java • JavaScript • PHP • SQL • React • Node.js <br>
-Machine Learning • Deep Learning • NLP • Data Analysis <br>
-Git • Linux • UML • Agile • REST API
+Machine Learning • Deep Learning • NLP <br>
+Git • Linux • UML • REST API • Agile
 </div>
-
 </section>
 
 <!-- CONTACT -->
@@ -291,9 +334,8 @@ Git • Linux • UML • Agile • REST API
 
 <div class="card">
 Email : ilhamelouarzadi123@gmail.com <br>
-LinkedIn : <a href="https://www.linkedin.com/in/ilham-elouarzadi-30944b335/" target="_blank">profil</a>
+LinkedIn : disponible sur profil
 </div>
-
 </section>
 
 </body>
